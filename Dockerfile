@@ -26,7 +26,7 @@ WORKDIR "${GITLAB_CI_MULTI_RUNNER_HOME_DIR}"
 ENTRYPOINT ["/sbin/entrypoint.sh"]
 
 # PHP5.6 on Ubuntu 14.04
-RUN sudo apt-get install python-software-properties
+#RUN sudo apt-get install python-software-properties
 RUN sudo apt-add-repository -y ppa:ondrej/php
 RUN sudo apt-get -y update
 RUN sudo apt-get -y install \
